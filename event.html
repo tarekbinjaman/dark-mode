@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event managment company</title>
+</head>
+<body>
+    <h2 onclick="alert('Hero programmer')">Exploring events</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad, facere, veniam accusantium recusandae sunt quis labore voluptatum ut reprehenderit quam assumenda aspernatur sit amet
+         commodi minus ipsa corporis? Earum.</p>
+    <button id="light-mode">Light mode</button>
+    <button id="second-button">Ben 10 mode</button>
+    <button id="button-three">Dark mode</button>
+    <button id="last-person">Red mode</button>
+    <script>
+        document.getElementById('last-person').addEventListener('click', function(){
+            document.body.style.color = 'white';
+            document.body.style.background = 'tomato';
+        })
+
+        document.getElementById('button-three').addEventListener('click', function() {
+            document.body.style.background = 'black';
+            document.body.style.color = 'white';
+        })
+        document.getElementById('light-mode').addEventListener('click', function() {
+            document.body.style.background = 'white';
+            document.body.style.color = 'black';
+        })
+        document.getElementById('second-button').addEventListener('click', function() {
+            document.body.style.background = 'green';
+            document.body.style.color = 'white';
+        })
+        // function handleClick () {
+        //     document.body.style.backgroundColor = 'tomato';
+        // }
+
+        // const secondbutton = document.getElementById('second-button');
+        // // secondbutton.onclick = handleClick;
+        // secondbutton.addEventListener('click', handleClick)
+    </script>
+</body>
+</html>
